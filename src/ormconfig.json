@@ -8,13 +8,13 @@
    "synchronize": true,
    "logging": false,
    "entities": [
-      "build/entity/*.js"
+      "src/entity/*.ts"
    ],
    "migrationsTableName": "migrations",
    "migrations": [
-      "build/migration/**.js"
+      "src/migration/*.ts"
    ],
    "cli": {
-      "migrationsDir": "build/migration"
+      "migrationsDir": "src/migration"
    }
 }

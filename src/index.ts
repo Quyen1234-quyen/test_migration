@@ -7,13 +7,14 @@ createConnection({
     host: "localhost",
     port: 3306,
     username: "root",
-    password: "admin",
-    database: "test",
+    password: "",
+    database: "test_migration",
     entities: [
-        __dirname + "/entity/*.js"
+        __dirname + "/entity/*.ts"
     ],
     synchronize: true,
 }).then(connection => {
+    console.log('connection success')
     // here you can start to work with your entities
 }).catch(error => console.log(error));
 
